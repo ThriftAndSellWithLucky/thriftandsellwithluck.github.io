@@ -2,7 +2,7 @@
 simpleCart({
   checkout: {
     type: "PayPal",
-    email: "you@yours.com"
+    email: "thriftandsellwithlucky@gmail.com"
   }
 });
 
@@ -15,10 +15,11 @@ jQuery(document).ready(function () {
 });
 
 //* Define spreadsheet URL (make sure you add the #gid=0 for the sheet you want to use)
-var googleSheetURI = 'https://docs.google.com/spreadsheets/d/1M9XcbcpGaOO9iYP6JhxXUO9R0csetEaDPjYHlB6hSQM/edit#gid=0';
+const googleSheetURI = 'https://docs.google.com/spreadsheets/d/1M9XcbcpGaOO9iYP6JhxXUO9R0csetEaDPjYHlB6hSQM/edit#gid=0';
+//https://docs.google.com/spreadsheets/d/1M9XcbcpGaOO9iYP6JhxXUO9R0csetEaDPjYHlB6hSQM/edit?usp=sharing
 
 //* Compile the Handlebars template for HR leaders
-var HRTemplate = Handlebars.compile($('#hr-template').html());
+const HRTemplate = Handlebars.compile($('#hr-template').html());
 
 //* Load products from spreadsheet
 $('#products').sheetrock({
